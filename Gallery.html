@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <style>
+        div.gallery {
+            border: 1px solid crimson;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 25%;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .responsive {
+                width: 50%;
+                margin: 6px 0;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        div.gallery:hover {
+            border: blueviolet;
+            border: 4px;
+        }
+    </style>
+</head>
+<body>
+<h1>
+    Responsive Image Gallery
+</h1>
+<h3>
+    Resize the browser window to see the effect.
+</h3>
+<div class="responsive">
+    <div class="gallery">
+        <img src="https://cdn.pose.com.vn/assets/2019/05/15/5587267925354223366844883628721449536668784n-15576238621521859483428-15578502417451816708793.jpg"
+             alt="">
+    </div>
+</div>
+<div class="responsive">
+    <div class="gallery">
+        <img src="https://static1.bestie.vn/Mlog/ImageContent/201901/screen-shot-2019-01-22-at-124951-pm-a47bd4.png"
+             alt="">
+    </div>
+</div>
+<div class="responsive">
+    <div class="gallery">
+        <img src="https://media.baodautu.vn/Images/chicuong/2019/07/27/mvl7y4jk.jpg" alt="">
+    </div>
+</div>
+<div class="responsive">
+    <div class="gallery">
+        <img src="https://2.bp.blogspot.com/-gnXUMwRHkaI/WE1VCAktNhI/AAAAAAAAjfs/CZk6jUipKXgvOKc821Rnz-fwXT0QhLEuACEw/s1600/15085502_591915637681021_5420424684372040797_n.jpg"
+             alt="">
+    </div>
+</div>
+<div style="padding: 6px; clear: both; font-family: Impact">
+    This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px
+    wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side.
+    For screens smaller than 500px, the images will stack vertically (100%).
+</div>
+</div>
+</body>
+</html>
